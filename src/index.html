@@ -1,42 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive SVG</title>
-    <style>
-        /* Make sure the body and HTML take up the full height and have no margins */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-        }
-
-        /* Container that takes up full screen */
-        .svg-container {
-            width: 100vw; /* Full width of the viewport */
-            height: 100vh; /* Full height of the viewport */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Ensure the SVG scales properly */
-        svg {
-            width: 100%;   /* Make the SVG take up 100% of the container width */
-            height: 100%;  /* Make the SVG take up 100% of the container height */
-            object-fit: contain; /* Maintain aspect ratio */
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+max-width: 100%;
+height: auto;
+}
+</style>
 </head>
 <body>
-    <div class="svg-container">
-        <!-- Reference the SVG image from the provided URL -->
-        <object data="https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg" type="image/svg+xml"></object>
-    </div>
+<img src=”https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg” width=”800″ height=”600″>
 </body>
 </html>
