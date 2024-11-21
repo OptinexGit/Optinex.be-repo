@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-img {
-max-width: 100%;
-height: auto;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive SVG</title>
+    <style>
+        /* Ensuring the body and HTML take full screen and no margins */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Container to make sure the SVG scales correctly */
+        .svg-container {
+            width: 100vw;  /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Object tag scaling styles */
+        object {
+            width: 100%;   /* Make the object take up 100% of the container's width */
+            height: 100%;  /* Make the object take up 100% of the container's height */
+            object-fit: contain; /* Maintain aspect ratio and ensure the image fits within the container */
+        }
+    </style>
 </head>
 <body>
-<img src=”https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg” width=”800″ height=”600″>
+    <div class="svg-container">
+        <!-- Reference the SVG file hosted on Azure Blob Storage -->
+        <object data="https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg" type="image/svg+xml"></object>
+    </div>
 </body>
 </html>
