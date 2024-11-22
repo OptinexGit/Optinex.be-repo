@@ -31,12 +31,21 @@
             height: 100%;  /* Make the object take up 100% of the container's height */
             object-fit: contain; /* Maintain aspect ratio and ensure the image fits within the container */
         }
+
+        /* Style for mobile screens */
+        @media (max-width: 768px) {
+            .svg-container object {
+                content: url('https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex Mobile.svg');
+            }
+        }
     </style>
 </head>
 <body>
     <div class="svg-container">
-        <!-- Reference the SVG file hosted on Azure Blob Storage -->
+        <!-- Default SVG for larger screens -->
         <object data="https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg" type="image/svg+xml"></object>
     </div>
 </body>
 </html>
+
+
