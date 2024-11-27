@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive SVG</title>
+    <title>Uw Limburgse IT-Partner</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex_Logo_Favicon.svg">
+
     <style>
-        /* Ensuring the body and HTML take full screen and no margins */
+        /* Ensure body and HTML take full screen and no margins */
         body, html {
             margin: 0;
             padding: 0;
@@ -16,7 +20,7 @@
             background-color: #f0f0f0;
         }
 
-        /* Container to make sure the SVG scales correctly */
+        /* Container ensures the SVG scales correctly */
         .svg-container {
             width: 100vw;  /* Full width of the viewport */
             height: 100vh; /* Full height of the viewport */
@@ -31,21 +35,12 @@
             height: 100%;  /* Make the object take up 100% of the container's height */
             object-fit: contain; /* Maintain aspect ratio and ensure the image fits within the container */
         }
-
-        /* Style for mobile screens */
-        @media (max-width: 768px) {
-            .svg-container object {
-                content: url('https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex - Mobile.png');
-            }
-        }
     </style>
 </head>
 <body>
     <div class="svg-container">
-        <!-- Default SVG for larger screens -->
+        <!-- SVG content for display -->
         <object data="https://sgwebappprodwesteu001.blob.core.windows.net/optinexweb/Optinex.svg" type="image/svg+xml"></object>
     </div>
 </body>
 </html>
-
-
